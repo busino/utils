@@ -4,6 +4,13 @@
 # Daily backups with retention of 20 days
 # Monthly backups will be stored forever
 #
+# Prerequisits
+# sudo apt-get install python3-boto3
+#
+# Add to crontab
+# 0 2 * * * /usr/bin/python3 /home/ubuntu/test/backup_db.py > /home/ubuntu/test/log/backup.log 2>&1
+#
+
 
 import sys
 import os
